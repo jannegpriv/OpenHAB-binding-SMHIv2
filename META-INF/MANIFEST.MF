@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Private-Package: org.openhab.binding.smhi.internal
+Ignore-Package: org.openhab.binding.smhi.internal
+Bundle-Name: openHAB SMHI Binding
+Bundle-Vendor: openHAB.org
+Bundle-Version: 1.8.1.qualifier
+Bundle-Activator: org.openhab.binding.smhi.internal.SmhiActivator
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html
+Bundle-Description: This is the SMHI binding of the open Home Aut
+ omation Bus (openHAB)
+Import-Package: org.apache.commons.lang,
+ org.apache.commons.net,
+ org.apache.commons.net.ntp,
+ org.codehaus.jackson.annotate;version="1.9.2",
+ org.codehaus.jackson.map;version="1.9.2",
+ org.openhab.core.binding,
+ org.openhab.core.events,
+ org.openhab.core.items,
+ org.openhab.core.library.items,
+ org.openhab.core.library.types,
+ org.openhab.core.service,
+ org.openhab.core.types,
+ org.openhab.io.net.http,
+ org.openhab.model.item.binding,
+ org.osgi.framework,
+ org.osgi.service.cm,
+ org.osgi.service.component,
+ org.osgi.service.event,
+ org.slf4j
+Bundle-SymbolicName: org.openhab.binding.smhi
+Bundle-DocURL: http://www.openhab.org
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Service-Component: OSGI-INF/binding.xml, OSGI-INF/genericbindingprovider.xml
+Bundle-ClassPath: .,
+ lib/gson-2.2.4.jar
+Export-Package: org.openhab.binding.smhi
