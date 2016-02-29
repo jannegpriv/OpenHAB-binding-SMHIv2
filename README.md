@@ -3,7 +3,7 @@ OpenHAB-binding-SMHI
 
 A SMHI weather binding for OpenHab supporting [SMHI API PMP2g](http://www.smhi.se/klimatdata/ladda-ner-data/api-for-pmp-dokumentation-1.76980). 
 This binding is based on the work made by Mattias Markehed on https://github.com/ibaton/OpenHAB-binding-SMHI with some quite big code changes including support for latest API version and also
-configuration for tour home position in openhab.cfg. 
+configuration for your home position in openhab.cfg. 
 The number of queries needed have also been optimized using cached results per position.
 
 For installation of the binding, please see [Wiki](https://github.com/openhab/openhab/wiki/Bindings).
